@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>MOVIE FLIX 🎥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="logo"> MOVIE FLIX🎭</div>
+
+
+<div id="featuredBanner" class="featured-banner">
+    <div class="featured-content">
+        <h1 id="featuredTitle"></h1>
+        <p id="featuredOverview"></p>
+        <button id="featuredBtn">View Details</button>
+    </div>
+</div>
+
+
+<!-- CENTER MOOD SECTION -->
+<div class="hero-center">
+
+    <div class="mood-card">
+        <h1 class="hero-title">What’s your mood today?</h1>
+
+        <div class="mood-grid">
+
+            <button class="mood-btn" onclick="searchMood('happy')">😄 Happy</button>
+            <button class="mood-btn" onclick="searchMood('romantic')">❤️ Romantic</button>
+            <button class="mood-btn" onclick="searchMood('excited')">🤩 Excited</button>
+            <button class="mood-btn" onclick="searchMood('sad')">😢 Sad</button>
+            <button class="mood-btn" onclick="searchMood('scared')">😨 Scared</button>
+            <button class="mood-btn" onclick="searchMood('chill')">😎 Chill</button>
+            <button class="mood-btn" onclick="searchMood('curious')">🤔 Curious</button>
+            <button class="mood-btn" onclick="searchMood('inspired')">✨ Inspired</button>
+            <button class="mood-btn" onclick="searchMood('nostalgic')">📼 Nostalgic</button>
+
+        </div>
+    </div>
+
+</div>
+<!-- MOVIE ROWS -->
+<h3 class="row-title">தமிழ் Hits</h3>
+<div class="movie-row" id="tamilRow"></div>
+
+<h3 class="row-title">हिन्दी Movies</h3>
+<div class="movie-row" id="hindiRow"></div>
+
+<h3 class="row-title">Hollywood Movies</h3>
+<div class="movie-row" id="hollywoodRow"></div>
+
+<h3 class="row-title">Popular Movies</h3>
+<div class="movie-row" id="popularRow"></div>
+
+<script src="home.js"></script>
+
+</body>
+</html>
